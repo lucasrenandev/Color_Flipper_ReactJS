@@ -26,7 +26,7 @@ export const GlobalStyles = createGlobalStyle`
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 22px 16%;
+        padding: 22px 18%;
     }
 
     .logo {
@@ -80,7 +80,7 @@ export const GlobalStyles = createGlobalStyle`
         height: 100%;
         background-color: transparent;
         border-radius: 30px;
-        padding: 0 3.3rem 0 2rem;
+        padding: 0 3.5rem 0 2rem;
         font-size: 1.2rem;
         font-weight: 400;
         color: #fff;
@@ -90,7 +90,7 @@ export const GlobalStyles = createGlobalStyle`
     .input-box i {
         position: absolute;
         color: #fff;
-        right: 25px;
+        right: 27px;
         top: 50%;
         transform: translateY(-50%);
         font-size: 24px;

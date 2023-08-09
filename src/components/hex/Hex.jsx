@@ -5,13 +5,13 @@ export default function hex() {
     const inputBoxRef = useRef(null)
     const inputRef = useRef(null)
     const iconRef = useRef(null)
-    let [newCode] = useState("")
+    let [newHexCode] = useState("")
 
     {/* Gerar cores hexadecimal */}
     const generateHexColors = () => {
-        newCode = hexCode()
-        sectionRef.current.style.backgroundColor = newCode
-        inputRef.current.value = newCode
+        newHexCode = hexCode()
+        sectionRef.current.style.backgroundColor = newHexCode
+        inputRef.current.value = newHexCode
         iconRef.current.style.display = "inline-block"
     }
 
@@ -30,8 +30,8 @@ export default function hex() {
         const max = 6
         let newHex = ""
         for(let i = 0; i < max; i ++) {
-            const randomHexa = Math.floor(Math.random() * hex.length)
-            newHex += hex.substring(randomHexa, randomHexa + 1)
+            const randomHex = Math.floor(Math.random() * hex.length)
+            newHex += hex.substring(randomHex, randomHex + 1)
         }
         return "#" + newHex
     }
@@ -46,7 +46,7 @@ export default function hex() {
             </form>{/* End input box */}
             <div className="button-box">
                 <button id="btn-hex" onClick={generateHexColors} 
-                type="button">Hexa</button>
+                type="button">Hex</button>
             </div>{/* End button box */}
         </section>//End section
     )

@@ -5,7 +5,7 @@ export default function header() {
             <nav className="navbar">
                 <ul className="nav-list">
                     <li><a href="/simple">Simple</a></li>
-                    <li><a href="/hexa">Hexadecimal</a></li>
+                    <li><a href="/hex">Hex</a></li>
                 </ul>
             </nav>
         </header>
